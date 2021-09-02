@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --navbar-height: 59px;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0px;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#logo {
+  margin: 5px 3px;
+}
+#logo img {
+  height: 150px;
+  margin: 3px 5px;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.8rem;
+  font-family: "Balsamiq Sans", cursive;
+}
+#navbar ul li a {
+  color: black;
+  display: block;
+  padding: 1px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 200px;
+  height: 480px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  background: url("../image/bg2.jpg") no-repeat center center/cover;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+#home h1 {
+  color: black;
+  text-align: center;
+  font-size: 2 rem;
+  font-family: "Balsamiq Sans", cursive;
+}
+#home p {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Balsamiq Sans", cursive;
+}
+#music {
+  margin: 28px;
+  display: flex;
+}
+#music .box {
+  border: 2px solid black;
+  border: 2px solid black;
+  padding: 12px;
+  margin: 2px 4px;
+  border-radius: 24px;
+  background: #f2f2f2;
+}
+#music .box img {
+  height: 230px;
+  margin: auto;
+  display: block;
+}
+#music .box p {
+  font-family: "Balsamiq Sans", cursive;
+}
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 90vh;
+  width: 85vw;
+  margin: 0 auto;
+}
+footer {
+  background: black;
+  color: white;
+  padding: 3px 20px;
+  font-family: "Balsamiq Sans", cursive;
+}
+.image {
+  background: url("../image/girl-1990347_1920.jpg") center/cover no-repeat;
+}
+.content {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.content h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 6px;
+  opacity: 0.9;
+  font-family: "Balsamiq Sans", cursive;
+}
+.content span {
+  height: 0.5px;
+  width: 80px;
+  background: #777;
+  margin: 30px 0;
+}
+.content p {
+  padding-bottom: 15px;
+  font-weight: 300;
+  font-family: "Balsamiq Sans", cursive;
+  opacity: 0.7;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+@media (max-width: 992px) {
+  #about {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .image {
+    height: 100vh;
+  }
+  .content {
+    height: 100vh;
+  }
+  .content h2 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .content span {
+    margin: 20px 0;
+  }
+  .content p {
+    font-size: 14px;
+  }
+}
+.h-primary {
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 2.8rem;
+  padding: 12px;
+}
+.h-secondary {
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 2.1rem;
+  padding: 12px;
+}
+.center {
+  text-align: center;
+}
